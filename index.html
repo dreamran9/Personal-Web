@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('./image/W4.png'); /* 替换为你的图片地址 */
+            background-size: cover; /* 覆盖整个页面 */
+            background-position: center; /* 背景图片居中显示 */
+            background-attachment: fixed; /* 背景图片固定，不随滚动条滚动 */
+            height: 100vh; /* 视口高度 */
+            width: 100vw; /* 视口宽度 */
+            position: relative; /* 相对定位 */
+            display: flex; /* 使用flex布局 */
+            flex-direction: column; /* 子元素垂直排列 */
+            align-items: center; /* 水平居中 */
+            justify-content: flex-start; /* 垂直方向从顶部开始 */
+        }
+        h2 {
+            margin-top: 20px; /* 调整标题与顶部的距离 */
+            margin-bottom: 60px; /* 与头像之间的间距 */
+            font-size: 40px; 
+        }
+        .profile-picture {
+            width: 200px; /* 设置头像大小 */
+            height: 200 px; /* 设置头像大小 */
+            border-radius: 50%; /* 设置圆形头像 */
+            margin-bottom: 80px; /* 与按钮之间的间距 */
+        }
+        .jump-button {
+            display: inline-block; /* 使按钮水平排列 */
+            margin: 10px; /* 按钮之间的水平间距 */
+            padding: 30px 50px; /* 增加按钮的内边距，使其看起来更大 */
+            background-color: #e1ece4;
+            color: rgb(20, 20, 20);
+            text-decoration: none; /* 去除下划线 */
+            border-radius: 10px; /* 增加圆角 */
+            cursor: pointer;
+            font-size: 25px; /* 增加字体大小 */
+            transition: transform 0.2s; /* 添加按钮点击时的缩放效果 */
+        }
+        .jump-button:hover {
+            transform: scale(1.1); /* 鼠标悬停时放大按钮 */
+        }
+        .button-container {
+            margin-top: 200px; /* 减少按钮容器与标题之间的间距 */
+        }
+        .footer-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <h2>主 页</h2> <!-- 主页标题 -->
+    <img src="./image/Dor.png" alt="Profile Picture" class="profile-picture"><!-- 头像图片 -->
+    <div class="button-container"> <!-- 按钮容器 -->
+        <a href="web/self-introduction.html" class="jump-button" id="jumpButton">Brief Introduction</a>
+        <a href="web/run.html" class="jump-button">Want to Run?</a>
+        <a href="web/lol.html" class="jump-button">Game</a>
+        <a href="web/else.html" class="jump-button">Learn More About Me</a>
+    </div>
+    <div class="footer-button">
+        <a href="https://train-any.github.io/room110/" class="jump-button">Back to dormitory</a>
+    </div>
+</body>
+</html>
