@@ -19,11 +19,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
         }
         h2 {
-            margin-top: 20px;
-            margin-bottom: 60px;
+            margin: 20px 0;
             font-size: 40px;
         }
         .profile-picture {
@@ -48,16 +47,20 @@
             transform: scale(1.1);
         }
         .button-container {
-            margin-top: 200px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            margin-bottom: 40px; /* 保持与下方按钮的距离 */
         }
         .footer-button {
+            width: 100%; /* 使底部按钮宽度与页面宽度一致 */
             position: absolute;
             bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 0;
+            text-align: center; /* 使文本居中 */
+        }
+        .footer-button .jump-button {
+            padding: 20px 0; /* 调整底部按钮的内边距 */
         }
         @media (max-width: 768px) {
             body {
@@ -72,6 +75,9 @@
             .jump-button {
                 padding: 20px 30px;
                 font-size: 18px;
+            }
+            .footer-button .jump-button {
+                padding: 15px 0;
             }
         }
     </style>
